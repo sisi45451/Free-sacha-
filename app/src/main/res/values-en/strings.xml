@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tab_feed">Feed</string>
+    <string name="tab_folders">Folders</string>
+    <string name="tab_contacts">Contacts</string>
+    <string name="tab_ask">Ask</string>
+    <string name="tab_todos">To-dos</string>
+
+    <string name="action_back">Back</string>
+    <string name="action_record">Record</string>
+
+    <string name="record_meeting">Record a meeting</string>
+    <string name="record_meeting_hint">Phone microphone, works with the screen off. Remember to tell participants.</string>
+    <string name="record_memo">Voice memo</string>
+    <string name="record_memo_hint">An idea, a report, something not to forget.</string>
+    <string name="record_coming_soon">Meetings and memos arrive in step 5.</string>
+
+    <string name="recording_title">Recording</string>
+    <string name="placeholder_step_2">The recording page (audio player and transcript) arrives in step 2.</string>
+    <string name="placeholder_step_3">This tab arrives in step 3 (AI analysis, to-dos and assistant).</string>
+    <string name="placeholder_step_4">This tab arrives in step 4 (folders and enriched contact cards).</string>
+
+    <string name="settings_title">Settings</string>
+    <string name="settings_version">Version</string>
+    <string name="settings_call_log">Caller identification from call log</string>
+    <string name="settings_call_log_on">On (personal build)</string>
+    <string name="settings_call_log_off">Off (Google Play build): contacts and file name only</string>
+    <string name="settings_privacy">Privacy</string>
+    <string name="settings_privacy_summary">Encrypted database on the phone. Nothing goes to the cloud without your consent.</string>
+</resources>

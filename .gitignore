@@ -1,0 +1,33 @@
+# --- Gradle / Android Studio ---
+.gradle/
+build/
+/local.properties
+.idea/
+*.iml
+.kotlin/
+captures/
+.externalNativeBuild/
+.cxx/
+.DS_Store
+
+# --- Secrets : ne jamais committer de clés ni de keystores ---
+*.jks
+*.keystore
+# Exception : clé de debug partagée (voir app/build.gradle.kts).
+!app/debug.keystore
+keystore.properties
+secrets.properties
+google-services.json
+
+# --- Modèles IA téléchargés (volumineux, récupérés à l'exécution) ---
+*.gguf
+*.tflite
+*.onnx
+models/
+
+# --- Web (étape 6) ---
+node_modules/
+web/dist/
+.env
+.env.*
+!.env.example

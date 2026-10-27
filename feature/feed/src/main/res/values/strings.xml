@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Français : langue par défaut de l'app. -->
+<resources>
+    <string name="feed_filter_all">Tous</string>
+    <string name="feed_filter_calls">Appels</string>
+    <string name="feed_filter_meetings">Réunions</string>
+    <string name="feed_filter_memos">Mémos</string>
+
+    <string name="feed_kind_call">Appel</string>
+    <string name="feed_kind_incoming_call">Appel entrant</string>
+    <string name="feed_kind_outgoing_call">Appel sortant</string>
+    <string name="feed_kind_meeting">Réunion</string>
+    <string name="feed_kind_memo">Mémo</string>
+
+    <string name="feed_unknown_number">Numéro masqué</string>
+    <string name="feed_untitled">Sans titre</string>
+    <string name="feed_processing">Analyse en cours…</string>
+    <string name="feed_processing_failed">Échec du traitement : touchez pour réessayer</string>
+    <string name="feed_recording_in_progress">Enregistrement en cours…</string>
+
+    <plurals name="feed_open_todos">
+        <item quantity="one">%d to-do à faire</item>
+        <item quantity="many">%d to-dos à faire</item>
+        <item quantity="other">%d to-dos à faire</item>
+    </plurals>
+
+    <string name="feed_empty_title">Aucun enregistrement pour l\'instant</string>
+    <string name="feed_empty_message">Vos appels, réunions et mémos apparaîtront ici, avec leur résumé.</string>
+    <string name="feed_error_title">Impossible d\'afficher le fil</string>
+    <string name="feed_error_message">Une erreur est survenue en lisant la base de données.</string>
+</resources>

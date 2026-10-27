@@ -1,0 +1,48 @@
+# Intégration continue : à chaque push, GitHub compile l'app, lance les tests
+# et publie l'APK de debug en « artefact » (téléchargeable depuis l'onglet
+# Actions du dépôt, puis installable sur le téléphone).
+name: Android CI
+
+on:
+  push:
+    branches: [main, "claude/**"]
+  pull_request:
+  workflow_dispatch:
+
+concurrency:
+  group: android-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: JDK 21
+        uses: actions/setup-java@v5
+        with:
+          distribution: temurin
+          java-version: "21"
+          cache: gradle
+
+      - name: Compilation et tests unitaires
+        # « test » lance les tests de tous les modules (et compile au passage la
+        # variante play, qui doit elle aussi rester compilable).
+        run: ./gradlew --no-daemon --stacktrace assemblePersoDebug test
+
+      - name: APK de debug (variante perso)
+        uses: actions/upload-artifact@v7
+        with:
+          name: callnotes-perso-debug
+          path: app/build/outputs/apk/perso/debug/*.apk
+          retention-days: 14
+
+      # Schéma Room généré : à versionner avant toute migration de la base.
+      - name: Schéma de la base
+        uses: actions/upload-artifact@v7
+        with:
+          name: room-schemas
+          path: core/database/schemas/
+          retention-days: 14
