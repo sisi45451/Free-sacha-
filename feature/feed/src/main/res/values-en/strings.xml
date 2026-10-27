@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="feed_filter_all">All</string>
+    <string name="feed_filter_calls">Calls</string>
+    <string name="feed_filter_meetings">Meetings</string>
+    <string name="feed_filter_memos">Memos</string>
+
+    <string name="feed_kind_call">Call</string>
+    <string name="feed_kind_incoming_call">Incoming call</string>
+    <string name="feed_kind_outgoing_call">Outgoing call</string>
+    <string name="feed_kind_meeting">Meeting</string>
+    <string name="feed_kind_memo">Memo</string>
+
+    <string name="feed_unknown_number">Private number</string>
+    <string name="feed_untitled">Untitled</string>
+    <string name="feed_processing">Analyzing…</string>
+    <string name="feed_processing_failed">Processing failed: tap to retry</string>
+    <string name="feed_recording_in_progress">Recording…</string>
+
+    <plurals name="feed_open_todos">
+        <item quantity="one">%d to-do left</item>
+        <item quantity="other">%d to-dos left</item>
+    </plurals>
+
+    <string name="feed_empty_title">No recordings yet</string>
+    <string name="feed_empty_message">Your calls, meetings and memos will show up here, with their summary.</string>
+    <string name="feed_error_title">Can\'t show the feed</string>
+    <string name="feed_error_message">Something went wrong while reading the database.</string>
+</resources>

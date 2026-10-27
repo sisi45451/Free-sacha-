@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Aucune donnée de l'app n'est incluse dans la sauvegarde Google ni dans le
+  transfert vers un nouveau téléphone : enregistrements et transcriptions sont
+  sensibles, et la base chiffrée serait de toute façon illisible ailleurs
+  (sa clé reste dans le Keystore de ce téléphone).
+-->
+<data-extraction-rules>
+    <cloud-backup>
+        <exclude domain="root" />
+        <exclude domain="file" />
+        <exclude domain="database" />
+        <exclude domain="sharedpref" />
+        <exclude domain="external" />
+    </cloud-backup>
+    <device-transfer>
+        <exclude domain="root" />
+        <exclude domain="file" />
+        <exclude domain="database" />
+        <exclude domain="sharedpref" />
+        <exclude domain="external" />
+    </device-transfer>
+</data-extraction-rules>

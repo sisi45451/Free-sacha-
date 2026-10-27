@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+      Thème de la fenêtre uniquement (écran de démarrage, fond avant le
+      premier affichage Compose). Les couleurs de l'interface viennent du
+      thème Compose CallNotesTheme (core:designsystem).
+    -->
+    <style name="Theme.CallNotes" parent="android:Theme.Material.Light.NoActionBar" />
+</resources>

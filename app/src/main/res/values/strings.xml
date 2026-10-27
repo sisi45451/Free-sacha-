@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Français : langue par défaut. Traduction anglaise dans values-en/. -->
+<resources>
+    <string name="app_name" translatable="false">CallNotes</string>
+
+    <!-- Onglets -->
+    <string name="tab_feed">Fil</string>
+    <string name="tab_folders">Dossiers</string>
+    <string name="tab_contacts">Contacts</string>
+    <string name="tab_ask">Demander</string>
+    <string name="tab_todos">To-dos</string>
+
+    <!-- Actions -->
+    <string name="action_back">Retour</string>
+    <string name="action_record">Enregistrer</string>
+
+    <!-- Choix de l'enregistrement -->
+    <string name="record_meeting">Enregistrer une réunion</string>
+    <string name="record_meeting_hint">Micro du téléphone, écran éteint possible. Pensez à prévenir les participants.</string>
+    <string name="record_memo">Mémo vocal</string>
+    <string name="record_memo_hint">Une idée, un compte rendu, une chose à ne pas oublier.</string>
+    <string name="record_coming_soon">Les réunions et mémos arrivent à l\'étape 5.</string>
+
+    <!-- Écrans d'attente -->
+    <string name="recording_title">Enregistrement</string>
+    <string name="placeholder_step_2">La fiche d\'enregistrement (lecteur audio et transcription) arrive à l\'étape 2.</string>
+    <string name="placeholder_step_3">Cet onglet arrive à l\'étape 3 (analyse IA, to-dos et assistant).</string>
+    <string name="placeholder_step_4">Cet onglet arrive à l\'étape 4 (dossiers et fiches contacts enrichies).</string>
+
+    <!-- Réglages -->
+    <string name="settings_title">Réglages</string>
+    <string name="settings_version">Version</string>
+    <string name="settings_call_log">Identification par le journal d\'appels</string>
+    <string name="settings_call_log_on">Activée (version perso)</string>
+    <string name="settings_call_log_off">Désactivée (version Google Play) : contacts et nom de fichier uniquement</string>
+    <string name="settings_privacy">Confidentialité</string>
+    <string name="settings_privacy_summary">Base chiffrée sur le téléphone. Rien n\'est envoyé dans le cloud sans votre accord.</string>
+</resources>
